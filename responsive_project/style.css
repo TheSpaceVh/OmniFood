@@ -1,0 +1,649 @@
+
+
+/***************************/
+/* Hero */
+/***************************/
+.hero{
+  max-width: 110rem;
+  margin: 0 auto;
+  padding:0 1rem;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* gap: 5rem; */
+}
+
+.hero-description {
+  font-size:1.8rem;
+  line-height:1.5;
+  margin-bottom: 4.4rem;
+}
+
+.hero-image-box {
+  justify-items: center;
+}
+
+.hero-image {
+  width: 80%;
+  /* height: 60rem */
+  border-radius: 10px;
+  justify-self: end;
+}
+
+.delivered-box {
+  display: flex;
+  align-items: center;
+  margin-top: 7rem;
+  gap: 20px;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-img {
+  width: 4.8rem;
+  border-radius: 100%;
+  margin-left: -1.7rem;
+  border: solid 3.5px #fff;
+}
+
+.delivered-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.delivered-text span {
+  color: #3aae2a;
+  font-size: 1.8rem;
+}
+
+
+
+/***************************/
+/* navigation */
+/***************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  padding: 0 4rem;
+}
+
+.logo {
+  height: 7rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+ .nav-list-element:link, 
+ .nav-list-element:visited {
+  padding: 0 15px;
+  text-decoration: none;
+  color: #10451D;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: all 0.1s;
+}
+
+ .nav-list-element:hover, 
+ .nav-list-element:active {
+  border-bottom: solid 3px  #3aae2a;
+}
+
+.cta:link, .cta:visited {
+  color: #fff;
+  background-color: #3aae2a;
+  padding:1.5rem 2.8rem;
+  border-radius: 100px;
+}
+
+.cta:hover, .cta:active {
+  background-color: #2e8b22;
+  border: none;
+}
+
+
+
+/***************************/
+/* How to use */
+/***************************/
+
+.step-reverse-text {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.step-reverse-img {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.step-number {
+  font-size: 7rem;
+  color: #89ce7f;
+  font-weight: 700;
+}
+
+.step-description {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.step-imgs-box {
+  position: relative;
+}
+
+.step-imgs-box::after,
+.step-imgs-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+}
+
+.step-imgs-box::after {
+  width: 75%;
+  padding-bottom: 75%;
+  background-color: #89ce7f;
+}
+
+.step-imgs-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.step-img {
+  width: 45%;
+  z-index: 10;
+}
+
+
+
+/***************************/
+/* featured in */
+/***************************/
+.featured-header {
+  color: #999;
+  letter-spacing: 2.2px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.featured-icons {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+.featured-icons img {
+  padding:0 0.3rem;
+  height: 3rem;
+  filter: grayscale(100%);
+  filter: brightness(0%);
+  opacity: 30%;
+}
+
+
+
+/***************************/
+/* Meals section */
+/***************************/
+.meal{
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+  overflow: hidden;
+  transition:all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.5rem);
+  box-shadow: 0 3.5rem 6rem rgba(0, 0, 0, 0.075);
+
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-attribute {
+  font-size: 1.5rem;
+  list-style: none;
+  font-weight: 500;
+}
+
+.meal-categories {
+  padding:3rem 4.8rem 4.8rem 4.8rem;
+}
+
+.tag {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.tag--vegetarian {
+  background-color: #39c427b4;
+  /* color: #fff; */
+}
+
+.tag--paleo {
+ background-color:#ffbe0b ;
+}
+
+.tag--vegan { 
+  background-color: #9ef01a;
+}
+
+.meal-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2.3rem;
+}
+
+.icon-diet {
+  font-size: 2rem !important;
+}
+
+/* diet list */
+.diet .heading-tertiary {
+  color:  #3aae2a;
+}
+
+.list-item {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+/* all recipes */
+.all-recipes {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* .footer-link:hover, */
+.link:visited,
+.link:link {
+  text-decoration: none;
+  color: #3aae2a;
+  border-bottom: solid 1px currentColor;
+  padding-bottom: 0.1rem;
+  transition: all 0.3s;
+}
+
+/* .footer-link, */
+.link:hover,
+.link:active {
+  color: #2e8b22;
+  border-bottom: solid 1px transparent;
+}
+
+
+/***************************/
+/* testimonails section */
+/***************************/
+
+
+.testimonail-img {
+  width: 5rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #fff;
+}
+
+.testimonail-text p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+}
+
+.testimonail-text span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color:#999;
+}
+
+.testimonails-heading .sub-heading{
+  font-size: 1.8rem;
+  color: #3aae2a;
+}
+
+.testimonails-heading .heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+
+.gallary {
+  padding: 1rem;
+  background-color: #FFF;
+}
+
+.gallary-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+  /* border-radius: 0.3rem; */
+}
+
+.gallary-item {
+  overflow: hidden;
+}
+
+
+.test-container {
+  align-items: center;
+}
+
+
+.gallary-item img:hover {
+  transform: scale(1.1);
+}
+
+/***************************/
+/* Price section */
+/***************************/
+.container-plans {
+  justify-items: center;
+  max-width: 110rem;
+  padding:0 10rem;
+  margin: 0 auto;
+}
+
+.plan-box {
+  align-items: center;
+  padding: 5rem;
+  border: 3px solid;
+  border-radius: 15px;
+}
+
+.plan-starter {
+  border-color: rgba(153, 153, 153, 0.23);
+}
+
+.plan-complete {
+  /* border-color: #39ae2a3b; */
+  border-color: #eff9ee;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #b0dfaa; */
+}
+
+.plan-complete::after {
+  content: "Best value";
+  position: absolute;
+  top: 5%;
+  right: -15%;
+  font-size: 1.2rem;
+  font-weight: 800;
+  background-color: #ffbe0b;
+  padding: .4rem 6rem;
+  transform: rotate(45deg);
+  text-transform: uppercase;
+}
+
+.plan-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color:#3aae2a;
+}
+
+.plan-text {
+  text-align: center;
+}
+
+.plan-price {
+  display: block;
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.plan-price span {
+  font-size: 3rem;
+}
+
+.plan-per-meal {
+  font-size: 1.5rem;
+}
+
+.plan-get-list li span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.plan-starter .btn {
+  margin-left: 1.5rem;
+}
+
+.plan-complete .btn {
+  margin-left: 3rem;
+}
+
+/* Features */
+
+.features {
+  padding:0 15rem;
+}
+
+.features-text {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.feature-icon {
+  font-size: 3.2rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #eff9ee;
+  margin-bottom: 1.8rem;
+}
+
+.feature-header {
+  /* color: #fff; */
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  /* color: #fff; */
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+
+/***************************/
+/* CTA section */
+/***************************/
+.container-cta {
+  background-image: linear-gradient(to right bottom, rgba(57, 193, 39, 0.5), rgba(158, 240, 26, 0.548));
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  max-width: 90rem;
+  padding:5rem 5rem;
+  margin: 0 auto;
+  box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.075); ;
+}
+
+.container-cta:focus {
+  box-shadow: 0 0 0 0.8rem rgb(239, 249, 238, 0.5);
+}
+/* .cta-form-text {
+
+} */
+
+.cta-header {
+  font-size: 3.8rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.cta-form label{
+  font-size: 1.5rem;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-form input {
+  /* text-align:left */
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #aaa;
+  border:1px solid #333;
+  border-radius: 12px;
+  padding: 1.3rem 12rem 1.3rem 1rem;
+}
+
+.cta-form select {
+  border:1px solid #333;
+  padding: 1.3rem 11.7rem 1.3rem 1rem;
+  border-radius: 12px;
+}
+
+.select-bar {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333; 
+}
+
+.select-bar:hover {
+  outline: none;
+}
+
+.form-btn{
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #10451D;
+  align-self: end;
+  justify-self: start;
+  text-align: center;
+  /* padding: 1.3rem 8rem 1.3rem 13rem; */
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  font-size: 1.7rem;
+}
+
+.form-btn:hover {
+  background-color: #FFF;
+  color: #333;
+}
+
+
+/***************************/
+/* Footer */
+/***************************/
+.footer {
+  border-top:solid 1px rgba(170, 170, 170, 0.448) ;
+}
+
+.footer-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  display: inline-block;
+  /* margin-bottom: 1.4rem; */
+}
+
+.footer-link:visited,
+.footer-link:link{
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #777;
+  border-bottom: solid 1px transparent;
+  padding-bottom: 0.1rem;
+  transition: all 0.3s;
+}
+
+.footer-link:hover, 
+.footer-link:active {
+  color: #333;
+  /* font-weight: 500; */
+}
+
+.contact {
+  gap:2rem;
+  
+}
+
+.footer-text:first {
+  padding-bottom:20rem;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.footer-logo-box {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.primary-color {
+  color: #3aae2a;
+}
+
+.footer-logo {
+  height: 4rem;
+}
+
+.social-media-logos {
+  margin-left: 1rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.social-media-logo {
+  font-size: 2.3rem;
+  color: #555;
+}
+
+.copy-right p{
+  color: #666;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+

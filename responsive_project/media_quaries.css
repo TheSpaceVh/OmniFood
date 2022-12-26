@@ -1,0 +1,373 @@
+/***************************/
+/* Bellow 1325px (Smaller laptops)*/
+/***************************/
+@media (max-width:83em) {
+  .hero {
+    max-width: 100rem;
+  }
+
+  .heading-primary {
+    font-size: 4.6rem;
+  }
+
+  .meal-title {
+    font-size: 2rem;
+  }
+
+  .semi-section-features .grid {
+    gap: 8rem;
+  }
+}
+
+
+/***************************/
+/* Bellow 1120px (?)*/
+/***************************/
+@media (max-width:70em) {
+  html {
+    font-size: 58%;
+  }
+
+  .hero {
+    max-width: 90rem;
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  .meal-title {
+    font-size: 1.8rem
+  }
+
+  .section-meals .grid {
+    gap: 5rem;
+  }
+
+  .featured-icons {
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+}
+
+
+/***************************/
+/* Bellow 912px (iPad)*/
+/***************************/
+@media (max-width: 57em) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    padding:1.5rem 3rem;
+    border-radius: 100px;
+  }
+
+  .section-meals .grid {
+    gap: 3rem;
+  }
+
+  .featured-icons {
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  .semi-section-features {
+    justify-items: end;
+  }
+
+  .features{
+    padding: 0 0;
+  }
+
+  .semi-section-features .container {
+    padding: 0 5rem;
+  }
+
+  .semi-section-features .grid {
+    gap: 5rem;
+  }
+}
+
+
+/***************************/
+/* Bellow 768px (small iPad)*/
+/***************************/
+@media (max-width: 48em) {
+  html {
+    font-size: 43%;
+  }
+
+  .hero{
+    max-width: 85rem;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .hero-image {
+    justify-self: center;
+    width: 50%;
+    /* transform: rotate(270deg); */
+  }
+
+  .delivered-box{
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+  
+  .featured-icons {
+    justify-content: space-evenly;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+  } 
+
+  .icon--usa-today {
+    grid-column: 1 / span 4; 
+    justify-self: center;
+  }
+
+  .section-meals .grid--3-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .meal {
+    grid-row: 1;
+    grid-column: span 2;
+    width: 85%;
+    justify-self: center;
+    margin-bottom: 5rem;
+  }
+
+  .diet {
+    grid-column: span 4;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .diet-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .test-container {
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .testimonail-text {
+    font-size: 1.8rem;
+  }
+
+  .gallary .grid--3-cols{
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-testimonails {
+    display: none;
+  }
+
+  .gallary .grid-3-cols {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .container-plans {
+    padding: 0 5rem;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+  }
+
+  /* .plan-box {
+    width: 100%;
+  } */
+
+  .section-pricing .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .plan-starter {
+    padding: 5rem 6.5rem;
+  }
+
+  .semi-section-features .grid--4-cols{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container-cta {
+    max-width: 73rem;
+    /* padding: rem; */
+  }
+
+  .cta-text {
+    padding: 0 3rem;
+    text-align: center;
+  }
+
+  .cta-form {
+    justify-items: center;
+  }
+
+
+  .cta-form .btn {
+    justify-self: center;
+    margin-top: 3rem;
+  }
+
+  .cta-form-content .cta-form{
+    grid-template-columns: 1fr;
+  }
+
+  .footer .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-box-small {
+    margin-bottom: 2rem;
+  }
+
+  .col-info {
+    grid-row: 2;
+  }
+
+  /* .section-meals .meal-container {
+    padding: 0 2rem;
+  } */
+}
+
+/***************************/
+/* Bellow 512px (big phones)*/
+/***************************/
+
+@media (max-width: 32em) {
+  html {
+    font-size: 38%;
+  }
+
+
+}
+
+/***************************/
+/* Bellow 416px (phones)*/
+/***************************/
+
+@media (max-width: 26em) {
+  html {
+    font-size: 33%;
+  }
+
+  .nav-how-it-works,
+  .nav-meals {
+    display: none;
+  }
+
+
+  .nav-pricing,
+  .nav-pricing:link,
+  .nav-pricing:visited{
+    background-color:#fff;
+    color: #154d15;
+    border: 1px solid #154d15;
+    padding:1.3rem 2.6rem;
+    border-radius: 100px;
+    transition: all 0.3s;
+    font-weight: 600;
+  }
+
+  .featured-icons {
+    /* justify-content: space-evenly;
+    gap: 2rem;
+    display: grid; */
+    gap: 4rem;
+    margin-top: 7rem;
+    grid-template-columns:1fr 1fr  ;
+  }
+
+  .featured-icon {
+    justify-self: center;
+  }
+  
+  .icon--usa-today {
+    grid-column: 1 / span 2; 
+  }
+
+  .section-how .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .step-reverse-text {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  .step-reverse-img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .step-imgs-box {
+    justify-self: center;
+    width: 80%;
+  }
+
+  .section-meals .grid--3-cols {
+    grid-template-rows: 1fr;
+  }
+
+  .section-meals .meal-container {
+    padding: 0 5rem;
+  }
+
+  .meal-text-container {
+    padding: 0 5rem;
+  }
+
+  .meal-container {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .meal-gyoza {
+    grid-row:  2;
+
+  }
+
+  .meal-salad {
+    grid-row:  1;
+
+  }
+
+  .meal {
+    grid-column: span 4;
+    width: 60%;
+    justify-self: center;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  .diet {
+    grid-row: 3;
+    /* grid-column: 1; */
+  }
+
+  .gallary .grid--gap-ssm {
+    gap: 0.5rem;
+  }
+
+  .section-pricing .pricing-text-container  {
+    padding: 0 5rem;
+  }
+
+  .section-cta .container-cta {
+    max-width: 50rem;
+  } 
+}
